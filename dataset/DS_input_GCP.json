@@ -1,0 +1,47 @@
+{
+	"name": "DS_input_GCP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GCP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "GCP"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "GoogleCloudStorageLocation",
+				"bucketName": "bkt-shareefaug-gcp",
+				"folderPath": "data_files"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Day",
+				"type": "String"
+			},
+			{
+				"name": "Weather",
+				"type": "String"
+			},
+			{
+				"name": "Temperature",
+				"type": "String"
+			},
+			{
+				"name": "Wind",
+				"type": "String"
+			},
+			{
+				"name": "Humidity",
+				"type": "String"
+			}
+		]
+	}
+}
