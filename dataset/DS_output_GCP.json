@@ -1,0 +1,25 @@
+{
+	"name": "DS_output_GCP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_STORAGEACCOUNT_Gen2",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "GCP"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "gcpoutput"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
